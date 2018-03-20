@@ -1,0 +1,30 @@
+.animationWrap{
+	display: none;
+}
+
+.flex-box{
+	width: 700px;
+	height: 400px;
+	background-color: red;
+	margin: 100px auto;
+	display: flex;
+	justify-content: center;/*flex-start,center, space-between flex-end*/
+	/*flex-direction: column;*//*row, row-reverse, column, column-reverse*/
+	align-items: center;/*flex-start, center, flex-end*/
+	flex-wrap: wrap;
+	align-content: center;
+}
+.flex-box .flex-item{
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background-color: blue;
+	border: 1px black solid;
+	margin-right: 20px;
+}
+.flex-box .flex-item:nth-child(4){
+	margin-right: 0;
+	align-self: flex-start;
+	justify-self: flex-end;
+}
